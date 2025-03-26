@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About VIVEK</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Match Background with Login Page */
+        body {
+            background: linear-gradient(135deg, #1e1e2f, #3a1c71, #d76d77);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            color: white;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .navbar ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        /* About Section */
+        .about-section {
+            max-width: 800px;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .about-section h1 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .about-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            width: 100%;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .about-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 15px;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">VIVEK</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h1>About VIVEK</h1>
+        <p>VIVEK is an AI-powered personal tutor designed to adapt to your learning needs, providing interactive and personalized tutoring assistance.</p>
+        
+        <div class="about-card">
+            <h2>Our Mission</h2>
+            <p>We aim to make education accessible, engaging, and personalized with AI-driven solutions that help students learn smarter.</p>
+        </div>
+
+        <div class="about-card">
+            <h2>Why Choose Us?</h2>
+            <p>VIVEK understands your learning patterns, provides real-time feedback, and customizes content based on your emotions and learning style.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        © 2025 VIVEK. All rights reserved.
+    </footer>
+
+</body>
+</html>
